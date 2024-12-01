@@ -7,7 +7,8 @@ html {
 
 nav {
   height: 48px;
-  width: 335px;
+  box-sizing: border-box;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -32,7 +33,7 @@ nav {
 }
 
 .main {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,19 +41,19 @@ nav {
 }
 
 .intro {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
-  width: 375px;
+  width: 100%;
   height: 626px;
-  box-sizing: border-box;
   padding-top: 114px;
   padding-bottom: 114px;
   padding-left: 24px;
   padding-right: 24px;
   background-image: url('Images/header-background-mobile.png');
-  border-radius: 0 0 0 70px;
-  background-position: top;
+  border-bottom-left-radius: 70px;
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: white;
 }
@@ -92,6 +93,7 @@ nav {
 }
 
 .projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,7 +317,6 @@ nav {
   color: white;
   text-align: center;
   line-height: 28px;
-  font-weight: lighter;
 }
 
 .contact-me-form {
@@ -342,6 +343,7 @@ nav {
 
 #msg {
   height: 170px;
+  resize: none;
 }
 
 .contact-me-form input {
@@ -366,4 +368,346 @@ nav {
   flex-direction: column-reverse;
   background-color: white;
   height: 850px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  height: 72px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+nav>div a{
+  color: #344563;
+  margin: 10px;
+  text-decoration: none;
+  font-family: "Poppins";
+
+}
+
+
+.intro {
+  padding: 144px;
+  padding-left: 200px;
+  padding-right: 200px;
+  background-size: cover;
+}
+
+.projects {
+  box-sizing: border-box;
+  padding: 142px;
+}
+
+.project-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.project-item>img{
+  width: 70%;
+}
+
+.project-item .details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.details p {
+  margin: 0;
+  color: #344563;
+}
+
+.details button {
+  width: 126px;
+  height: 48px;
+  padding: 12px;
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  border-color: #396df2;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-top: 12px;
+}
+
+.project-item h2 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.developer-details {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  font-size: 13px;
+}
+
+.developer-details .class2 {
+  color: #7a869a;
+}
+
+.class1 {
+  color: #344563;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+
+.skills label {
+  background-color: #ebebff;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 375px;
+  row-gap: 24px;
+  padding: 114px 24px 114px 24px;
+  background-color: white;
+  border-top-right-radius: 70px;
+  justify-content: center;
+}
+
+.myself {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.myself h1 {
+  color: #172b4d;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.myself p {
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  width: 327px;
+}
+
+.myself button {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  border-color: #396df2;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-top: 12px;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-langs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding: 12px;
+}
+
+.langu {
+  display: flex;
+  flex-direction: row;
+  width: 327px;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.langu img {
+  width: 24px;
+  height: 24px;
+}
+
+.langu h2 {
+  margin: 0;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.abc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 66.72px;
+  column-gap: 16px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+}
+
+.abc img {
+  height: 48px;
+  width: 48px;
+}
+
+.abc label {
+  color: #253858;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+#langu1,
+#langu2 {
+  border-bottom: 1px solid #e3e5e9;
+}
+
+.contact-me {
+  background-image: url("Images/contact form bg.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position-x: 152px;
+  background-position-y: 24px;
+  box-sizing: border-box;
+  width: 375px;
+  height: 779px;
+  padding: 114px 24px 24px 24px;
+  border-top-left-radius: 70px;
+  background-color: #6070ff;
+  font-family: Poppins, sans-serif;
+}
+
+.contact-me h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.contact-me p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 28px;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 375px;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+#msg,
+.contact-me-form input {
+  box-sizing: border-box;
+  width: 327px;
+  border: none;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
+  color: #172b4d;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#msg {
+  height: 170px;
+  resize: none;
+}
+
+.contact-me-form input {
+  height: 48px;
+  line-height: 20px;
+}
+
+#contact-me-button {
+  padding: 12px;
+  border-radius: 8px;
+  width: 142px;
+  height: 48px;
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
+  color: #6070ff;
+  background-color: white;
+  border: none;
+}
+
+.contact-me-cover {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  height: 850px;
+}
 }
